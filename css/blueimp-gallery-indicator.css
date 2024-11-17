@@ -46,6 +46,19 @@
   cursor: pointer;
 }
 
+.blueimp-gallery > .indicator.desktop-big > li{
+  background-size: cover;
+}
+.blueimp-gallery > .indicator.desktop-big::-webkit-scrollbar {
+  background: #202020;
+}
+.blueimp-gallery > .indicator.desktop-big::-webkit-scrollbar-thumb {
+  background: rgb(82, 82, 82);
+}
+.blueimp-gallery > .indicator.desktop-big::-webkit-scrollbar-thumb:hover{
+  background: grey;
+}
+
 /* IE7 fixes */
 * + html .blueimp-gallery > .indicator > li {
   display: inline;
@@ -94,4 +107,21 @@
 }
 .blueimp-gallery-single > .indicator {
   display: none;
+}
+
+@media (min-width: 768px){
+  .blueimp-gallery > .indicator.desktop-big {
+    height: 110px;
+    width: calc(100vw - 120px);
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .blueimp-gallery > .indicator.desktop-big > li{
+      width: 80px;
+      height: 80px;
+      opacity: 1;
+  }
+  .blueimp-gallery > .indicator.desktop-big > li:after{
+      display: none;
+  }
 }

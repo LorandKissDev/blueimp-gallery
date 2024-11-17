@@ -8,6 +8,7 @@
   - [Lightbox setup](#lightbox-setup)
   - [Controls](#controls)
   - [Contain](#contain)
+  - [Thumbnails on desktop](#thumbnails-on-desktop)
   - [Carousel setup](#carousel-setup)
   - [Responsive images](#responsive-images)
 - [Keyboard shortcuts](#keyboard-shortcuts)
@@ -197,6 +198,17 @@ Gallery widget:
   aria-modal="true"
   role="dialog"
 >
+  <!-- ... -->
+</div>
+```
+
+### Thumbnails on desktop
+
+To make the thumbnails bigger and scrollable on desktop, add the CSS class 
+`desktop-big` to the indicator element:
+
+```html
+<ol class="indicator desktop-big"></ol>
   <!-- ... -->
 </div>
 ```
